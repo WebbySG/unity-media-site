@@ -1,0 +1,30 @@
+/* ===========================================================
+   RESPONSIVE  — see /docs/responsive-spec.md
+   =========================================================== */
+@media (max-width: 1024px) {
+  :root { --section-y: 80px; }
+  .why-grid, .svc-grid { grid-template-columns: repeat(2, 1fr); }
+  .region-grid, .work-grid, .process-track, .tst-grid { grid-template-columns: repeat(2, 1fr); }
+  .results-grid { grid-template-columns: repeat(3, 1fr); }
+  .lead-grid { grid-template-columns: 1fr; gap: 40px; }
+  .footer-grid { grid-template-columns: 1fr 1fr; gap: 32px; }
+}
+
+@media (max-width: 720px) {
+  body { font-size: 16px; }
+  .nav-links, .nav-cta .btn-primary { display: none; }
+  .burger { display: flex; }
+  .hero-inner { padding: 120px 0 70px; }
+  .hero-stats { gap: 28px; }
+  .hero-stat .num { font-size: 36px; }
+  .why-grid, .svc-grid, .region-grid, .work-grid, .process-track, .tst-grid { grid-template-columns: 1fr; }
+  .results-grid { grid-template-columns: 1fr; gap: 36px; }
+  .form-row { grid-template-columns: 1fr; }
+  .process-step { padding-left: 60px; }
+  .footer-grid { grid-template-columns: 1fr; }
+  .footer-bottom { flex-direction: column; gap: 8px; }
+  .lead-form { padding: 28px 22px; }
+  .btn { width: 100%; justify-content: center; }
+  .hero-actions { flex-direction: column; }
+  .hero-actions .btn { width: 100%; }
+}
